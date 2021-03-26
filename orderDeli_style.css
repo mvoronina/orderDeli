@@ -1,0 +1,128 @@
+body
+{
+background-color: #534858;
+    overflow-y: hidden;
+
+}
+#main
+{
+    margin-top: 5%;
+    position: relative;
+}
+#header
+{
+    position: fixed;
+    margin-top: -10%;
+    margin-left: 33%;
+}
+#header h1
+{
+    text-decoration-line: underline;
+    text-align: center;
+    text-decoration: #fc6453;
+    text-decoration-line: underline;
+    font-family: 'Original Surfer', cursive;
+    color: #fc6453;
+}
+#content
+{
+    width: 65% ;
+    height: 460px;
+    position: relative;
+    margin-top: 10%;
+    background-color: #ffd8c8;
+    margin-left: 10%;
+    margin-right: 25%;
+    border-style: ridge;
+    border-width: 10px;
+    border-color: #fc6453;
+    overflow-y: scroll;
+
+}
+#content h2
+{
+    text-decoration-line: underline;
+    text-align: center;
+    text-decoration: #393d50;
+    text-decoration-line: underline;
+    font-family: 'Original Surfer', cursive;
+    color: #393d50;
+}
+#content table td
+{
+    font-family: 'Original Surfer', cursive;
+    color: #393d50;
+}
+
+#customerPersonalInfo
+{
+    position: relative;
+    margin-left: 27%;
+}
+#nameForPizza
+{
+    text-decoration-line: underline;
+    text-align: center;
+}
+#nameForSandwich
+{
+    text-decoration-line: underline;
+    text-align: center;
+}
+#invoice
+{
+    width: 20%;
+    height: 444px;
+    position: fixed;
+    background-color: #fc6453;
+    right: 10px;
+    top: 21%;
+    padding: 10px;
+    border-style: ridge;
+    border-width: 10px;
+    border-color: #ffd8c8;
+    overflow-y: scroll;
+}
+#order
+{
+    font-family: 'Original Surfer', cursive;
+    color: #393d50;
+}
+img
+{
+    width:75px;
+    height: 75px;
+    border-radius: 45px;
+    transition: transform .2s;
+}
+ img:hover
+{
+    transform: scale(2.5);
+}
+ table
+ {
+
+     border-style: solid;
+     border-radius: 13px;
+     border-left: none;
+     border-right: none;
+     border-width: 5px;
+     border-color: #393d50;
+
+ }
+ table #pizza td
+ {
+     width:75px;
+ }
+ button
+ {
+     margin-left: 12%;
+     height: 8%;
+     width: 30%;
+     text-decoration-line: underline;
+     text-align: center;
+     text-decoration: #393d50;
+     text-decoration-line: underline;
+     font-family: 'Original Surfer', cursive;
+     color: #393d50;
+ }

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Delicatessen</title>
+    <link href="orderDeli_style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Original+Surfer" rel="stylesheet">
+    <script type="text/javascript" src="orderDeli_JS.js"></script>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Welcome to City Delicatessen</h1>
+    </div>
+  <div id="content">
+<form>
+    <h2>Please, enter your personal information</h2>
+    <table id="customerPersonalInfo">
+        <tr><td >Firstname</td>
+            <td><input required id="firstname" type="text" pattern="^[A-Za-z -]+$" maxlength="25" size="30" autofocus=""></td>
+        </tr>
+        <tr><td>Lastname</td>
+            <td><input required id="lastname" type="text" pattern="^[A-Za-z -]+$" maxlength="25" size="30" autofocus=""></td>
+        </tr>
+        <tr><td >Address</td>
+            <td><input  required id="address" type="text"  size="30" autofocus=""></td>
+        </tr>
+        <tr><td>Phone number</td>
+            <td><input type="tel" required id="phone" pattern="[0-9]{10}" size="30" autofocus=""></td>
+        </tr>
+    </table>
+    <h2>Pizza</h2>
+    <table id="pizza">
+            <tr id="nameForPizza">
+                <td><input type="checkbox" name="pizzaNameCheesy" value="Super Cheesy">Super Cheesy<br><img src="Cheesepizza.jpg"></td>
+                <td><input type="checkbox" name="pizzaNameMeaty" value="Extra Meaty">Extra Meaty<br><img src="meatpizza.jpg"></td>
+                <td><input type="checkbox" name="pizzaNameVeggy" value="Really Veggy">Really Veggy<br><img src="veggypizza.jpg"></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="pizzaSizeSuperCheese" value="8.50" >Small $8.50<br>
+                    <input type="radio" name="pizzaSizeSuperCheese" value="11.50">Medium $11.50<br>
+                    <input type="radio" name="pizzaSizeSuperCheese" value="14.00">Large $14.00<br>
+                    <input type="radio" name="pizzaSizeSuperCheese" value="16.50">Extra large $16.50
+                </td>
+                <td><input type="radio" name="pizzaSizeExtraMeaty" value="8.50" >Small $8.50<br>
+                    <input type="radio" name="pizzaSizeExtraMeaty" value="11.50">Medium $11.50<br>
+                    <input type="radio" name="pizzaSizeExtraMeaty" value="14.00">Large $14.00<br>
+                    <input type="radio" name="pizzaSizeExtraMeaty" value="16.50">Extra large $16.50
+                </td>
+                <td><input type="radio" name="pizzaSizeReallyVeggy" value="8.50" >Small $8.50<br>
+                    <input type="radio" name="pizzaSizeReallyVeggy" value="11.50">Medium $11.50<br>
+                    <input type="radio" name="pizzaSizeReallyVeggy" value="14.00">Large $14.00<br>
+                    <input type="radio" name="pizzaSizeReallyVeggy" value="16.50">Extra large $16.50
+                </td>
+            </tr>
+             <tr>
+                 <td><input type="number" size="5" id="quantitySuperCheesy" min="0">Quanity
+                 </td>
+                 <td><input type="number" size="5" id="quantityExtraMeaty" min="0">Quanity
+                 </td>
+                 <td><input type="number" size="5" id="quantityReallyVeggy" min="0">Quanity
+                 </td>
+             </tr>
+      <tr>
+          <td>
+              <b>Add any or all of these extra toppings at $1.75 for each:</b><br>
+              <input type=checkbox name="SuperCheeseCheese"  value="cheese">Cheese<br>
+              <input type=checkbox name="SuperCheesePepperoni"  value="pepperoni">Pepperoni<br>
+              <input type=checkbox name="SuperCheeseMushrooms"  value="mushrooms">Mushrooms<br>
+              <input type=checkbox name="SuperCheeseBacon"  value="bacon">Bacon<br>
+              <input type=checkbox name="SuperCheeseOlives"  value="olives">Olives<br>
+          </td>
+          <td>
+              <b>Add any or all of these extra toppings at $1.75 for each:</b><br>
+              <input type=checkbox name="ExtraMeatyCheese"  value="cheese">Cheese<br>
+              <input type=checkbox name="ExtraMeatyPepperoni"  value="pepperoni">Pepperoni<br>
+              <input type=checkbox name="ExtraMeatyMushrooms"  value="mushrooms">Mushrooms<br>
+              <input type=checkbox name="ExtraMeatyBacon"  value="bacon">Bacon<br>
+              <input type=checkbox name="ExtraMeatyOlives"  value="olives">Olives<br>
+          </td>
+          <td>
+              <b>Add any or all of these extra toppings at $1.75 for each:</b><br>
+              <input type=checkbox name="ReallyVeggyCheese"  value="cheese">Cheese<br>
+              <input type=checkbox name="ReallyVeggyPepperoni"  value="pepperoni">Pepperoni<br>
+              <input type=checkbox name="ReallyVeggyMushrooms"  value="mushrooms">Mushrooms<br>
+              <input type=checkbox name="ReallyVeggyBacon"  value="bacon">Bacon<br>
+              <input type=checkbox name="ReallyVeggyOlives"  value="olives">Olives<br>
+          </td>
+      </tr>
+    </table>
+    <h2>Sandwich</h2>
+    <table>
+            <tr id="nameForSandwich">
+                <td><input type="checkbox" name="sandwichVeg" value="All Garden Vegetarian">All Garden Vegetarian $7.50<br><img src="sandwichVeggie.jpg"></td>
+                <td><input type="checkbox" name="sandwichBeef" value="Big Beef on a Bun">Big Beef on a Bun $8.50<br><img src="beefSandwich.jpg"></td><br>
+                <td><input type="checkbox" name="sandwichMix" value="Mixed Grill">Mixed Grill $9.50<br><img src="mixedSandwich.jpg"></td><br>
+                <td><input type="checkbox" name="sandwichPork" value="Grilled Pork">Grilled Pork $9.50<br><img src="grilledPorkSandwich.jpg"></td><br>
+            </tr>
+            <tr>
+                <td><input type="number" size="12" id="quantityVeg" min="0">Quanity</td>
+                <td><input type="number" size="12" id="quantityBeef" min="0">Quanity</td>
+                <td><input type="number" size="12" id="quantityMix" min="0">Quanity</td>
+                <td><input type="number" size="12" id="quantityPork" min="0">Quanity</td>
+            </tr>
+    </table>
+    <h2>Drink</h2>
+    <table>
+    <tr>
+        <td><input type="checkbox" name="drinkNameCola" value="Cola">Cola</td>
+        <td><input type="checkbox" name="drinkNameLemon" value="Lemon">Lemon</td>
+        <td><input type="checkbox" name="drinkNameOrange" value="Orange">Orange</td>
+        <td><input type="checkbox" name="drinkNameRoot" value="RootBeer">Root Beer</td>
+    </tr>
+        <tr>
+            <td>
+                <input type="radio" name="drinkSizeCola" value=1.25>Small $1.25<br>
+                <input type="radio" name="drinkSizeCola" value="1.75">Medium $1.75<br>
+                <input type="radio" name="drinkSizeCola" value="2.00">Large $2.00</td>
+            <td><input type="radio" name="drinkSizeLemon" value="1.25">Small $1.25<br>
+                <input type="radio" name="drinkSizeLemon" value="1.75">Medium $1.75<br>
+                <input type="radio" name="drinkSizeLemon" value="2.00">Large $2.00</td>
+            <td><input type="radio" name="drinkSizeOrange" value="1.25">Small $1.25<br>
+                <input type="radio" name="drinkSizeOrange" value="1.75">Medium $1.75<br>
+                <input type="radio" name="drinkSizeOrange" value="2.00">Large $2.00</td>
+            <td><input type="radio" name="drinkSizeRootBeer" value="1.25">Small $1.25<br>
+                <input type="radio" name="drinkSizeRootBeer" value="1.75">Medium $1.75<br>
+                <input type="radio" name="drinkSizeRootBeer" value="2.00">Large $2.00</td>
+        </tr>
+        <tr>
+            <td><input type="number"  size="12" id="quantityCola" min="0">Quanity</td>
+            <td><input type="number"  size="12" id="quantityLemon" min="0">Quanity</td>
+            <td><input type="number"  size="12" id="quantityOrange" min="0">Quanity</td>
+            <td><input type="number"  size="12" id="quantityRootBeer" min="0">Quanity</td>
+        </tr>
+    </table>
+
+
+</form>
+</div>
+    <div id="invoice">
+        <button type="submit" value="submit" onClick="calculations()">Submit</button>
+        <button type="reset" value="reset" onclick="resetInfo()">Reset</button>
+            <div id="order">Your order:</div>
+
+    </div>
+
+</body>
+</html>
